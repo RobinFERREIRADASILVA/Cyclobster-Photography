@@ -1,21 +1,85 @@
 .container{
     display: grid;
-    grid-template-rows: 4% 96%;
+    grid-template-rows: 6% 94%;
 }
 
 .left-side{
     grid-row-start:1;
     grid-row-end: 2;
     background-color: black;
-    height: 100vh;
+
 }
 .right-side
 {
-    background-color: red;
+
     grid-row-start:2;
     grid-row-end: 3;
     height: 100vh;
 
+}
+.container-inside{
+    display: grid;
+    grid-template-rows: 100% 0% 0%
+}
+
+.logo{
+    grid-row-start:2;
+    grid-row-end: 3;
+
+}
+.navbar
+{
+    grid-row-start:1;
+    grid-row-end: 2;
+    height: 60px;
+
+
+
+}
+.socials{
+    grid-row-start:3;
+    grid-row-end: 4;
+
+}
+/* Mobile nav style */
+
+.logo, .socials, #mobile-expand, #web-nav{
+    display: none;
+}
+
+#mobile-nav {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+
+.mobile-logo
+{
+    display: inline-block;
+    margin-left: 25px;
+}
+.hamburger {
+    margin-right: 25px;
+    cursor: pointer;
+}
+.fa-bars {
+    font-size: 25px;
+}
+
+/* Main Content Style */
+
+.right-side {
+    background: url('public/assets/img/470re.jpg') no-repeat fixed;
+    background-size: cover;
+    background-position: center center;
+}
+.main-content{
+    text-align: center;
+    color: white;
+    margin-top: 200px;
+    padding: 0px 90px;
 }
 
 
@@ -71,4 +135,23 @@
     background-color: yellow;
 }
 
+/* Menu display */
+
+#mobile-nav, #mobile-expand, #web-nav{
+    display: none;
+}
+.logo, .socials{
+    display: block;
+}
+
+/* Background main content */
+.right-side {
+    background: url('public/assets/img/470reredesktop.jpg') no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.main-content{
+    margin-top: 280px;
+}
 }
