@@ -1,6 +1,14 @@
+body {
+    margin: 0;
+    color: white;
+}
+
 .container{
     display: grid;
     grid-template-rows: 6% 94%;
+    background: url(public/assets/img/470re.jpg) no-repeat fixed;
+    background-size: cover;
+    background-position: center center;
 }
 
 .left-side{
@@ -52,6 +60,7 @@
 }
 a{
     text-decoration: none;
+    color: white;
 }
 
 .logo, .socials, #web-nav{
@@ -63,7 +72,7 @@ a{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    color: white;
+
 }
 
 #mobile-nav a{
@@ -77,7 +86,7 @@ a{
     width: 100%;
     position: fixed;
     top: 0px;
-    color: white;
+
 
 }
 
@@ -115,7 +124,6 @@ a{
     display: inline-block;
     margin-left: 31px;
     margin-top: 22px;
-    color: white;
 }
 .hamburger {
     margin-right: 25px;
@@ -127,15 +135,10 @@ a{
 
 /* Main Content Style */
 
-.right-side {
-    background: url('public/assets/img/470re.jpg') no-repeat fixed;
-    background-size: cover;
-    background-position: center center;
-}
+
 .main-content{
     text-align: center;
-    color: white;
-    margin-top: 200px;
+    margin-top: 144px;
     padding: 0px 90px;
 }
 
@@ -144,6 +147,7 @@ a{
     .container
 {
     display: grid;
+
     grid-template-columns: 20% 80%;
     grid-template-rows: 25% 60% 15%;
 }
@@ -159,7 +163,6 @@ a{
 }
 .right-side
 {
-    background-color: red;
     grid-column-start: 2;
     grid-column-end: 3;
     grid-row-start:1;
@@ -177,31 +180,52 @@ a{
 .logo{
     grid-row-start:1;
     grid-row-end: 2;
-    background-color: aqua;
 }
 
 .navbar
 {
     grid-row-start:2;
     grid-row-end: 3;
-    background-color: grey;
+
     height: 100%;
 }
 .socials{
     grid-row-start:3;
     grid-row-end: 4;
-    background-color: yellow;
+
 }
 
 /* Menu display */
 
-#mobile-nav, #mobile-expand, #web-nav{
+#mobile-nav, #mobile-expand{
     display: none;
 }
-.logo, .socials{
+.logo, .socials, #web-nav{
     display: block;
 }
+.logo h1{
+    margin-left: 15%;
 
+}
+.menu{
+
+    text-align: right;
+    margin-top: 170px;
+}
+.copyright p {
+    font-size: 0.7em;
+    position: absolute;
+    bottom: 0;
+    left: 34px;
+}
+.socials{
+    margin-top: 59px;
+    text-align: center;
+}
+
+.socials a {
+    margin-right: 8px ;
+}
 /* Background main content */
 .right-side {
     background: url('public/assets/img/470reredesktop.jpg') no-repeat;
@@ -212,4 +236,19 @@ a{
 .main-content{
     margin-top: 280px;
 }
+
+
+}
+
+@media (min-width: 1320px)
+{
+    .container
+    {
+        grid-template-columns: 16% 84%;
+
+    }
+    .logo h1{
+        margin-left: 20%;
+    
+    }
 }
