@@ -63,7 +63,7 @@ a{
     color: white;
 }
 
-.logo, .socials, #web-nav{
+.logo, .socials,.footer, #web-nav{
     display: none;
 }
 
@@ -148,7 +148,7 @@ a{
 {
     display: grid;
 
-    grid-template-columns: 20% 80%;
+    grid-template-columns: 25% 75%;
     grid-template-rows: 25% 60% 15%;
 }
 .left-side
@@ -200,11 +200,12 @@ a{
 #mobile-nav, #mobile-expand{
     display: none;
 }
-.logo, .socials, #web-nav{
+.logo, .socials,.footer, #web-nav{
     display: block;
 }
 .logo h1{
     margin-left: 15%;
+    margin-top: 65px;
 
 }
 .menu{
@@ -214,9 +215,7 @@ a{
 }
 .copyright p {
     font-size: 0.7em;
-    position: absolute;
-    bottom: 0;
-    left: 34px;
+    text-align: center;
 }
 .socials{
     margin-top: 59px;
@@ -240,7 +239,7 @@ a{
 
 }
 
-@media (min-width: 1320px)
+@media (min-width: 1450px)
 {
     .container
     {
