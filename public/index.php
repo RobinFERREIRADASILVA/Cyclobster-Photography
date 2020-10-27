@@ -1,7 +1,7 @@
 <?php
+use CP\Utils\Database;
 
 require __DIR__ . '/../vendor/autoload.php';
-
 ?>
 
 <!DOCTYPE html>
@@ -30,6 +30,7 @@ require __DIR__ . '/../vendor/autoload.php';
                 <div class="navbar">
                     <nav id="web-nav">
                         <ul class="menu">
+                            <li><a href="">Home</a></li>
                             <li><a href="">Gallery</a></li>
                             <li><a href="">About</a></li>
                             <li><a href="">Contact</a></li>
@@ -48,6 +49,7 @@ require __DIR__ . '/../vendor/autoload.php';
                             <i class="fas fa-times"></i>
                         </div>
                         <ul class="menu">
+                            <li><a href="">Home</a></li>
                             <li><a href="">Gallery</a></li>
                             <li><a href="">About</a></li>
                             <li><a href="">Contact</a></li>
@@ -73,6 +75,7 @@ require __DIR__ . '/../vendor/autoload.php';
         </header>
         <div class="right-side">
             <div class="main-content">
+                <h1>Cyclobster Photography.</h1>
                 <h2>Come into my world.</h2>
                 <p>Photograph for your service, work in argentique and numeric. Enjoy different styles of universe with my collections.</p>
             </div>
