@@ -1,0 +1,24 @@
+{
+    "name": "robin/cyclobster",
+    "description": "book photograph",
+    "type": "project",
+    "license": "Beerware",
+    "authors": [
+        {
+            "name": "Robin FERREIRA DA SILVA",
+            "email": "ferreiradasilvarobin@gmail.com"
+        }
+    ],
+    "require": {
+        "altorouter/altorouter": "1.1.0"
+
+    },
+    "require-dev": {
+        "symfony/var-dumper": "^5.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "CP\\":"app/"
+        }
+    }
+}
