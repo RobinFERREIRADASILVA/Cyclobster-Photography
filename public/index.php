@@ -1,86 +1,111 @@
 <?php
-use CP\Utils\Database;
 
 require __DIR__ . '/../vendor/autoload.php';
-?>
-
-<!DOCTYPE html>
-<html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,800;1,400&display=swap" rel="stylesheet">
 
 
+$router = new Altorouter();
+//Récupère le chemin de notre site
+$router->setBasePath($_SERVER['BASE_URI']);
 
-    <title>Cyclobster Photography</title>
-</head>
-<body>
-    <div class="container">
-        <header class="left-side">
-            <div class="container-inside">
+// $router->map(
+//     'GET',
+//     '/',
+//     [
+//         'method' => 'home',
+//         'controller' => 'CP\Controllers\MainController'
 
-                <div class="logo">
-                    <h1>Cyclobster Photography</h1>
-                    
+//     ],
+//     'home'
+// );
+$router->map( 
+    //Le type de requete (GET ou POST)
+    'GET',
+    // L'URL ou le schema d'url que AltoRouter va surveiller pour activer cette route
+    '/',
+    // target , càd la "destination de la route"
+    [
+        'method' => 'home',
+        'controller' => 'CP\Controllers\MainController'
+    ],
+    //Optionnellement on peut nommer cette route
+    'home'
+);
 
-                </div>
-                <div class="navbar">
-                    <nav id="web-nav">
-                        <ul class="menu">
-                            <li><a href="">Home</a></li>
-                            <li><a href="">Gallery</a></li>
-                            <li><a href="">About</a></li>
-                            <li><a href="">Contact</a></li>
-                            <li><a href="">Livre d'or</a></li>
-                        </ul>
-                    </nav>
-                    <nav id="mobile-nav">
-                        <a href="#" class="mobile-logo">Cyclobster Photography</a>
-                        <div class="hamburger">
-                            <i class="fas fa-bars close"></i>
-                        </div>
-                    </nav>
-                    <nav id="mobile-expand" class="displayNone">
-                        <div class="header-nav">
-                            <a href="index.html" class="mobile-logo">Cyclobster Photography</a>
-                            <i class="fas fa-times"></i>
-                        </div>
-                        <ul class="menu">
-                            <li><a href="">Home</a></li>
-                            <li><a href="">Gallery</a></li>
-                            <li><a href="">About</a></li>
-                            <li><a href="">Contact</a></li>
-                            <li><a href="">Livre d'or</a></li>
-                        </ul>
-                    </nav>
-                    
+$router->map(
+    'GET',
+    '/gallery',
+    [
+        'method' => 'gallery',
+        'controller' => 'CP\Controllers\MainController'
 
-                </div>
-                
-                <div class="footer">
-                    <div class="socials">
-                        <a href="https://www.instagram.com/cyclobster_/"><i class="fab fa-instagram"></i></a>
-                        <a href="https://www.facebook.com/Miik0o.G"><i class="fab fa-facebook"></i></a>
-                        <a href="#"><i class="fab fa-twitter"></i></a>
-                        <a href="guemouni.mickael@gmail.com"><i class="fas fa-envelope"></i></a>
-                    </div>
-                    <div class="copyright">
-                        <p>Copyright Cyclobster Studio 2020.</p>
-                    </div>
-                </div>
-            </div>
-        </header>
-        <div class="right-side">
-            <div class="main-content">
-                <h1>Cyclobster Photography.</h1>
-                <h2>Come into my world.</h2>
-                <p>Photograph for your service, work in argentique and numeric. Enjoy different styles of universe with my collections.</p>
-            </div>
-        </div>
-    </div>
-    <script src="assets/js/app.js"></script>
-   </body>
-</html> 
+    ],
+    'gallery'
+);
+$router->map(
+    'GET',
+    '/about',
+    [
+        'method' => 'about',
+        'controller' => 'CP\Controllers\MainController'
+
+    ],
+    'about'
+);
+$router->map(
+    'GET',
+    '/contact',
+    [
+        'method' => 'contact',
+        'controller' => 'CP\Controllers\MainController'
+
+    ],
+    'contact'
+);
+$router->map(
+    'GET',
+    '/livre',
+    [
+        'method' => 'livre',
+        'controller' => 'CP\Controllers\MainController'
+
+    ],
+    'livre'
+);
+$router->map(
+    'GET',
+    '/error404',
+    [
+        'method' => 'error404',
+        'controller' => 'CP\Controllers\ErrorController'
+
+    ],
+    'error404'
+);
+$router->map(
+    'GET',
+    '/gallery/[i:id]',
+    [
+        'method' => 'galleryId',
+        'controller' => 'CP\Controllers\VariableController'
+
+    ],
+    'galleryId'
+);
+
+dump($router);
+dump($router->match());
+$match = $router->match();
+
+dump($match);
+
+if($match !== false)
+{
+    $controllerToUse = $match['target']['controller'];
+    $methodToCall = $match['target']['method'];
+    $controller = new $controllerToUse($router);
+    $controller->$methodToCall($match['params']);
+}
+// else{
+//     // $error = new ErrorController();
+//     // $error->show('error404');
+// }

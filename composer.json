@@ -1,5 +1,5 @@
 {
-    "name": "robin/cyclobster",
+    "name": "oclock/cyclobster",
     "description": "book photograph",
     "type": "project",
     "license": "Beerware",
@@ -18,7 +18,7 @@
     },
     "autoload": {
         "psr-4": {
-            "CP\\":"app/"
+            "photo\\":"app/"
         }
     }
 }
