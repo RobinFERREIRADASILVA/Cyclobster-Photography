@@ -1,22 +1,14 @@
 <?php
 
-require __DIR__ . '/../vendor/autoload.php';
+use photo\Controllers\ErrorController;
+use photo\Controllers\MainController;
 
+require __DIR__.'/../vendor/autoload.php';
 
-$router = new Altorouter();
-//Récupère le chemin de notre site
+$router = new AltoRouter();
+
 $router->setBasePath($_SERVER['BASE_URI']);
 
-// $router->map(
-//     'GET',
-//     '/',
-//     [
-//         'method' => 'home',
-//         'controller' => 'CP\Controllers\MainController'
-
-//     ],
-//     'home'
-// );
 $router->map( 
     //Le type de requete (GET ou POST)
     'GET',
@@ -25,7 +17,7 @@ $router->map(
     // target , càd la "destination de la route"
     [
         'method' => 'home',
-        'controller' => 'CP\Controllers\MainController'
+        'controller' => 'photo\Controllers\MainController'
     ],
     //Optionnellement on peut nommer cette route
     'home'
@@ -36,7 +28,7 @@ $router->map(
     '/gallery',
     [
         'method' => 'gallery',
-        'controller' => 'CP\Controllers\MainController'
+        'controller' => 'photo\Controllers\MainController'
 
     ],
     'gallery'
@@ -46,7 +38,7 @@ $router->map(
     '/about',
     [
         'method' => 'about',
-        'controller' => 'CP\Controllers\MainController'
+        'controller' => 'photo\Controllers\MainController'
 
     ],
     'about'
@@ -56,7 +48,7 @@ $router->map(
     '/contact',
     [
         'method' => 'contact',
-        'controller' => 'CP\Controllers\MainController'
+        'controller' => 'photo\Controllers\MainController'
 
     ],
     'contact'
@@ -66,7 +58,7 @@ $router->map(
     '/livre',
     [
         'method' => 'livre',
-        'controller' => 'CP\Controllers\MainController'
+        'controller' => 'photo\Controllers\MainController'
 
     ],
     'livre'
@@ -76,7 +68,7 @@ $router->map(
     '/error404',
     [
         'method' => 'error404',
-        'controller' => 'CP\Controllers\ErrorController'
+        'controller' => 'photo\Controllers\ErrorController'
 
     ],
     'error404'
@@ -86,26 +78,24 @@ $router->map(
     '/gallery/[i:id]',
     [
         'method' => 'galleryId',
-        'controller' => 'CP\Controllers\VariableController'
+        'controller' => 'photo\Controllers\VariableController'
 
     ],
     'galleryId'
 );
 
-dump($router);
-dump($router->match());
 $match = $router->match();
-
-dump($match);
 
 if($match !== false)
 {
     $controllerToUse = $match['target']['controller'];
     $methodToCall = $match['target']['method'];
-    $controller = new $controllerToUse($router);
+    $controller = new MainController($router);
     $controller->$methodToCall($match['params']);
 }
-// else{
-//     // $error = new ErrorController();
-//     // $error->show('error404');
+// else
+// {
+//     $controller = new photo\Controllers\ErrorController($router);
+//     $controller->error404();
+
 // }
