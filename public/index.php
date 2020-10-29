@@ -90,7 +90,7 @@ if($match !== false)
 {
     $controllerToUse = $match['target']['controller'];
     $methodToCall = $match['target']['method'];
-    $controller = new MainController($router);
+    $controller = new $controllerToUse($router);
     $controller->$methodToCall($match['params']);
 }
 // else

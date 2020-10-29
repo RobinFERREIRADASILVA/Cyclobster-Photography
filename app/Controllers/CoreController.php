@@ -15,10 +15,10 @@ class CoreController
     {
         $router = $this->router;
 
-        require_once __DIR__.'/../views/header.tpl.php';
-        require_once __DIR__.'/../views/sidebar.tpl.php';
+        require_once __DIR__.'/../views/layout/header.tpl.php';
+        require_once __DIR__.'/../views/layout/sidebar.tpl.php';
         require_once __DIR__.'/../views/'. $view .'.tpl.php';
-        require_once __DIR__.'/../views/footer.tpl.php';
+        require_once __DIR__.'/../views/layout/footer.tpl.php';
 
     }
 }

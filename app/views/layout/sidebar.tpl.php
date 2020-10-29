@@ -6,11 +6,12 @@
                     
 
                 </div>
+                
                 <div class="navbar">
                     <nav id="web-nav">
                         <ul class="menu">
-                            <li><a href="">Home</a></li>
-                            <li><a href="">Gallery</a></li>
+                            <li><a href="<?= $router->generate('home') ?>">Home</a></li>
+                            <li><a href="<?= $router->generate('gallery') ?>">Gallery</a></li>
                             <li><a href="">About</a></li>
                             <li><a href="">Contact</a></li>
                             <li><a href="">Livre d'or</a></li>
@@ -50,3 +51,4 @@
                 </div>
             </div>
         </header>
+        <div class="right-side">

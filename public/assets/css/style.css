@@ -310,13 +310,135 @@ text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
                 10px 20px 5px rgba(0,0,0,0.05),
                 -10px 20px 5px rgba(0,0,0,0.05);
 }
+
+/* Page Gallery */
+
+/* Grid */
+.gallery-bg{
+    background:url('../img/bg-gallery.jpg');
+    background-size: cover;
+    background-position: center center;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    grid-template-rows: 55% 45% ;
+
+
+}
+.main-category
+{
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 1;
+    grid-column-end: 4;
+
+    display: grid;
+    grid-template-columns: 50% 50%;
+
+}
+.studio{
+    background: url('../img/1.jpg');
+    background-size: cover;
+    background-position: center center;
+}
+.argentique{
+    background: url('../img/000023.jpg');
+    background-size: cover;
+    background-position: center center;
+}
+.outdoor {
+    background: url('../img/263.jpg');
+    background-size: cover;
+    background-position: center center;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+.nature
+{
+    background: url('../img/495.jpg');
+    background-size: cover;
+    background-position: center center;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+.lingerie
+{
+    background: url('../img/131.jpg');
+    background-size: cover;
+    background-position: center center;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 3;
+    grid-column-end: 4;
+}
+
+/* Box présentation */
+.category
+{
+    border: 1px solid black;
+    box-shadow: 1px 2px 14px 2px black;
+
+}
+.category-title
+{   
+    display: inline-block;
+    padding: 5px;
+    font-size: 1.5em;
+    margin: 200px auto;
+    color: black;
+    border: 1px solid black;
+
+
+}
+.category-title:hover
+{
+    border: 1px solid black;
+}
+.wrap{
+    opacity: 0.01;
+    height: 100%;
+    transition: 0.6s;
+}
+.wrap:hover
+{
+    opacity: 1;
+    border: 1px solid black;
+}
+.nature h2
+{
+    width: 53%;
+    margin-left: 100px;
+}
+.studio h2{
+    width: 11%;
+    margin-left: 301px;
+
+
+}
+.argentique h2 {
+    width: 19% ;
+    margin-left: 270px;
+}
+.outdoor h2, .lingerie h2 {
+    width: 22%;
+    margin-left: 175px;
+}
+
+
+
+
+
 }
 
 @media (min-width: 1450px)
 {
     .container
     {
-        grid-template-columns: 18% 78%;
+        grid-template-columns: 18% 82%;
 
     }
     .logo h1{

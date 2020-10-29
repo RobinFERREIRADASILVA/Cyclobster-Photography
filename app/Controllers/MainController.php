@@ -8,11 +8,11 @@ class MainController extends CoreController
 {
     public function home()
     {
-        $this->show('home');
+        $this->show('main/home');
     }
     public function gallery()
     {
-        $this->show('gallery');
+        $this->show('main/gallery');
     }
     public function about()
     {
