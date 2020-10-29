@@ -9,21 +9,23 @@
             <h2 class="category-title">Argentique</h2>
         </div>  
     </div>
-
-    <div class="category outdoor">
-        <div class="wrap">
-            <h2 class="category-title">Outdoor</h2>
+    <div class="sub-category">
+        <div class="category outdoor">
+            <div class="wrap">
+                <h2 class="category-title">Outdoor</h2>
+            </div>
+        </div>
+        <div class="category nature">
+            <div class="wrap">
+                <h2 class="category-title">Nature & Découverte</h2>
+            </div>
+        </div>
+        <div class="category lingerie">
+            <div class="wrap">
+                <h2 class="category-title">Lingerie</h2>
+            </div>
         </div>
     </div>
-    <div class="category nature">
-        <div class="wrap">
-            <h2 class="category-title">Nature & Découverte</h2>
-        </div>
-    </div>
-    <div class="category lingerie">
-        <div class="wrap">
-            <h2 class="category-title">Lingerie</h2>
-        </div>
-    </div>
+        
 
 </div>
