@@ -315,68 +315,64 @@ text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
 
 /* Grid */
 .gallery-bg{
-    background:url('../img/bg-gallery.jpg');
-    background-size: cover;
-    background-position: center center;
-    height: 100vh;
+    height: 100%;
     display: grid;
-    grid-template-rows: 55% 45% ;
+    grid-template-rows: 50% 50% 50% 50% 50% ;
     overflow: scroll;
 
 
 
 }
-.main-category
-{
-    grid-row-start: 1;
-    grid-row-end: 2;
-
-
+.category-top {
     display: grid;
     grid-template-columns: 50% 50%;
+}
+.category-bottom {
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
 
-}
-.sub-category{
-    
-}
 .studio{
-    background: url('../img/1.jpg');
+    background: url('../img/352.jpg');
     background-size: cover;
     background-position: center center;
-}
-.argentique{
-    background: url('../img/000023.jpg');
-    background-size: cover;
-    background-position: center center;
+    grid-column-start: 1 ;
+    grid-column-end: 2;
 }
 .outdoor {
     background: url('../img/263.jpg');
     background-size: cover;
     background-position: center center;
-    grid-row-start: 2;
-    grid-row-end: 3;
-    grid-column-start: 1;
-    grid-column-end: 2;
+    grid-column-start: 2 ;
+    grid-column-end: 3;
+
 }
+.argentique{
+    background: url('../img/000016.jpg');
+    background-size: cover;
+    background-position: center  ;
+}
+
 .nature
 {
-    background: url('../img/495.jpg');
+    background: url('../img/86.jpg');
     background-size: cover;
     background-position: center center;
-    grid-row-start: 2;
-    grid-row-end: 3;
-    grid-column-start: 2;
+    grid-column-start: 2 ;
     grid-column-end: 3;
+;
+
 }
 .lingerie
 {
     background: url('../img/131.jpg');
     background-size: cover;
     background-position: center center;
-    grid-row-start: 2;
-    grid-row-end: 3;
-    grid-column-start: 3;
-    grid-column-end: 4;
+    grid-column-start: 1 ;
+    grid-column-end: 2;
+    grid-row-start: 1;
+
+
 }
 
 /* Box présentation */
@@ -390,51 +386,47 @@ text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
 {   
     display: inline-block;
     padding: 5px;
-    font-size: 1.5em;
-    margin: 200px auto;
-    color: black;
-    border: 1px solid black;
+    font-size: 3em;
+    color: white;
     max-width: 100%;
+    border-bottom: 1px solid white;
+    margin: 0;
 
 
 }
-.category-title:hover
-{
-    border: 1px solid black;
-}
+
 .wrap{
     opacity: 0.01;
     height: 100%;
     transition: 0.6s;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
 }
 .wrap:hover
 {
-    opacity: 1;
+    opacity: 0.80;
     border: 1px solid black;
-}
-.nature h2
-{
-    width: 53%;
-    margin-left: 100px;
-}
-.studio h2{
-    width: 11%;
-    margin-left: 301px;
-
+    background-color: black;
 
 }
-.argentique h2 {
-    width: 19% ;
-    margin-left: 270px;
+
+
+.btn {
+    display: block;
+    text-transform: uppercase;
+    font-size: 0.6em;
+    padding: 7px;
+    background-color: black;
+    color: white;
+    border: 1px solid grey;
+    margin-top: 17px;
+    
+
 }
-.outdoor h2, .lingerie h2 {
-    width: 22%;
-    margin-left: 175px;
-}
-
-
-
-
 
 }
 
