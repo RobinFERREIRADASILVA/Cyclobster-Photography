@@ -10,7 +10,8 @@
         }
     ],
     "require": {
-        "altorouter/altorouter": "1.1.0"
+        "altorouter/altorouter": "^2.0",
+        "benoclock/alto-dispatcher": "^1.1"
 
     },
     "require-dev": {

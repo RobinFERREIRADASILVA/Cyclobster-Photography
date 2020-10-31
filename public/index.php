@@ -1,8 +1,4 @@
 <?php
-
-use photo\Controllers\ErrorController;
-use photo\Controllers\MainController;
-
 require __DIR__.'/../vendor/autoload.php';
 
 $router = new AltoRouter();
@@ -28,10 +24,20 @@ $router->map(
     '/gallery',
     [
         'method' => 'gallery',
-        'controller' => 'photo\Controllers\MainController'
+        'controller' => 'photo\Controllers\GalleryController'
 
     ],
     'gallery'
+);
+$router->map(
+    'GET',
+    '/category/[i:id]',
+    [
+        'method' => 'category',
+        'controller' => 'photo\Controllers\GalleryController'
+
+    ],
+    'category'
 );
 $router->map(
     'GET',
@@ -73,26 +79,19 @@ $router->map(
     ],
     'error404'
 );
-$router->map(
-    'GET',
-    '/gallery/[i:id]',
-    [
-        'method' => 'galleryId',
-        'controller' => 'photo\Controllers\VariableController'
 
-    ],
-    'galleryId'
-);
 
 $match = $router->match();
 
-if($match !== false)
-{
-    $controllerToUse = $match['target']['controller'];
-    $methodToCall = $match['target']['method'];
-    $controller = new $controllerToUse($router);
-    $controller->$methodToCall($match['params']);
-}
+$dispatcher = new Dispatcher($match, '\App\Controllers\ErrorController::err404');
+
+$dispatcher->setControllersArguments(
+    [
+        $router,
+    ]
+    );
+// Une fois le "dispatcher" configuré, on lance le dispatch qui va exécuter la méthode du controller
+$dispatcher->dispatch();
 // else
 // {
 //     $controller = new photo\Controllers\ErrorController($router);
