@@ -90,7 +90,7 @@ a{
     width: 100%;
     position: fixed;
     top: 0px;
-
+    z-index: 1;
 
 }
 
@@ -191,46 +191,12 @@ text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
     display: grid;
     grid-template-rows: 50% 50%;
 }
-
-.studio{
-    background: url('../img/352.jpg');
-    background-size: cover;
-    background-position: center center;
-    grid-row-start: 1 ;
-    grid-row-end: 2;
-}
-.outdoor {
-    background: url('../img/263.jpg');
-    background-size: cover;
-    background-position: center center;
-    grid-row-start: 2 ;
-    grid-row-end: 3;
-
-}
-.argentique{
-    background: url('../img/000016.jpg');
-    background-size: cover;
-    background-position: center  ;
-}
-
-.nature
+.background-option
 {
-    background: url('../img/86.jpg');
-    background-size: cover;
-    background-position: center center;
-    grid-row-start: 2 ;
-    grid-row-end: 3;
-;
+    background-size: cover !important;
+    background-position: center center !important;
+}
 
-}
-.lingerie
-{
-    background: url('../img/131.jpg');
-    background-size: cover;
-    background-position: center center;
-    grid-row-start: 1 ;
-    grid-row-end: 2;
-}
 
 /* Box présentation */
 .category
@@ -300,6 +266,8 @@ text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
     opacity: 0.01;
     height: 100%;
     transition: 0.6s;
+    display: flex;
+
 }
 .effect:hover {
     opacity: 0.8;
@@ -308,9 +276,8 @@ text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
 }
 .effect a {
     
-    display: inline-block;
-    width: 16%;
-    margin: 121px 159px;
+
+    margin: auto;
 
 }
 
@@ -472,52 +439,9 @@ text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
     grid-template-rows: 100%;
 }
 
-.studio{
-    background: url('../img/352.jpg');
-    background-size: cover;
-    background-position: center center;
-    grid-column-start: 1 ;
-    grid-column-end: 2;
-}
-.outdoor {
-    background: url('../img/263.jpg');
-    background-size: cover;
-    background-position: center center;
-    grid-column-start: 2 ;
-    grid-column-end: 3;
-    grid-row-start: 1;
 
-}
-.argentique{
-    background: url('../img/000016.jpg');
-    background-size: cover;
-    background-position: center  ;
-}
-
-.argentique h2, .argentique a {
+.middle-margin h2, .middle-margin a {
     margin-right: 50%;
-}
-
-.nature
-{
-    background: url('../img/86.jpg');
-    background-size: cover;
-    background-position: center center;
-    grid-column-start: 2 ;
-    grid-column-end: 3;
-    grid-row-start: 1;
-
-}
-.lingerie
-{
-    background: url('../img/131.jpg');
-    background-size: cover;
-    background-position: center center;
-    grid-column-start: 1 ;
-    grid-column-end: 2;
-    grid-row-start: 1;
-
-
 }
 
 /* Box présentation */

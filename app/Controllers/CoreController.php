@@ -15,6 +15,8 @@ class CoreController
     {
         $router = $this->router;
 
+        extract($viewData);
+
         require_once __DIR__.'/../views/layout/header.tpl.php';
         require_once __DIR__.'/../views/layout/sidebar.tpl.php';
         require_once __DIR__.'/../views/'. $view .'.tpl.php';

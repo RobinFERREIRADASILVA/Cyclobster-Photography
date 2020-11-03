@@ -18,7 +18,7 @@
                         </ul>
                     </nav>
                     <nav id="mobile-nav">
-                        <a href="#" class="mobile-logo">Cyclobster Photography</a>
+                        <a href="<?= $router->generate('home'); ?>" class="mobile-logo">Cyclobster Photography</a>
                         <div class="hamburger">
                             <i class="fas fa-bars close"></i>
                         </div>
@@ -29,8 +29,8 @@
                             <i class="fas fa-times"></i>
                         </div>
                         <ul class="menu">
-                            <li><a href="">Home</a></li>
-                            <li><a href="">Gallery</a></li>
+                            <li><a href="<?= $router->generate('home') ?>">Home</a></li>
+                            <li><a href="<?= $router->generate('gallery') ?>">Gallery</a></li>
                             <li><a href="">About</a></li>
                             <li><a href="">Contact</a></li>
                             <li><a href="">Livre d'or</a></li>

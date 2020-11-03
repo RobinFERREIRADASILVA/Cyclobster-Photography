@@ -1,6 +1,6 @@
 <?php
 
-namespace CP\Utils;
+namespace photo\Utils;
 use \PDO;
 
 // Retenir son utilisation  => Database::getPDO()
