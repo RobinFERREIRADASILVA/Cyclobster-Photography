@@ -4,6 +4,7 @@ namespace photo\Controllers;
 
 use photo\Controllers\CoreController;
 use photo\Models\Category;
+use photo\Models\Photos;
 
 class GalleryController extends CoreController
 {
@@ -18,7 +19,11 @@ class GalleryController extends CoreController
     }
     public function category($id)
     {
+        $picture = new Photos;
+        $pictureList = $picture->findByCategory($id);
 
-        $this->show('gallery/category');
+        $this->show('gallery/category',[
+            'pictureList' => $pictureList,
+        ]);
     }
 }

@@ -1,20 +1,9 @@
 <div class="category-container">
-
-    <div class="img category" style ="background: url(<?= $_SERVER['BASE_URI']  ?>/assets/img/2.jpg);">
+    <?php foreach($pictureList as $picture):  ?>
+    <div class="img category" style ="background: url(<?= $_SERVER['BASE_URI']  ?>/assets/img/<?= $picture->getPicture() ?>);">
         <div class="effect"> 
             <a href="#" class="btn">View photos</a>
         </div>
     </div>
-   
-    <div class="img category" style ="background: url(<?= $_SERVER['BASE_URI']  ?>/assets/img/2.jpg);">
-        <div class="effect">
-            <a href="#" class="btn">View photos</a>
-        </div>
-    </div>
-    <div class="img category" style ="background: url(<?= $_SERVER['BASE_URI']  ?>/assets/img/2.jpg);">
-            <div class="effect"> 
-                <a href="#" class="btn">View photos</a>
-            </div>
-    </div>
-
+<?php endforeach; ?>
 </div>

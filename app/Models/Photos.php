@@ -55,13 +55,11 @@ public function findByCategory($id)
 {
     $pdo = Database::getPDO();
     $sql = "
-    SELECT * FROM `photos` WHERE `photos`.`category_id` = :id ";
-    $pdoStatement = $pdo->prepare($sql);
+    SELECT * FROM `photos` WHERE `photos`.`category_id` = $id ";
+    $pdoStatement = $pdo->query($sql);
 
-    $pdoStatement->bindValue(':id', $id, PDO::PARAM_INT);
-
-    $picturesList = $pdoStatement->execute();
+    $pictureList = $pdoStatement->fetchAll(PDO::FETCH_CLASS, 'photo\Models\Photos');
     
-    return $picturesList;
+    return $pictureList;
 }
 }
