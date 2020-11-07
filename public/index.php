@@ -41,6 +41,16 @@ $router->map(
 );
 $router->map(
     'GET',
+    '/picture/[i:id]',
+    [
+        'method' => 'picture',
+        'controller' => 'photo\Controllers\GalleryController'
+
+    ],
+    'picture'
+);
+$router->map(
+    'GET',
     '/about',
     [
         'method' => 'about',

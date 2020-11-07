@@ -1,5 +1,6 @@
 let app = {
 
+    /* Mobile hamburger menu */    
     hamburgerElement : null,
     closeElement : null,
     mobileExpand : null,

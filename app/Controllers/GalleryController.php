@@ -26,4 +26,13 @@ class GalleryController extends CoreController
             'pictureList' => $pictureList,
         ]);
     }
+
+    public function picture($id)
+    {
+        $picture = Photos::find($id);
+
+        $this->show('gallery/picture', [
+            'picture' => $picture,
+        ]);
+    }
 }

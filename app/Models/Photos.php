@@ -62,4 +62,16 @@ public function findByCategory($id)
     
     return $pictureList;
 }
+
+public static function find($id)
+{
+    $pdo = Database::getPDO();
+    $sql = "
+    SELECT * FROM `photos` WHERE `id` = $id ";
+    $pdoStatement = $pdo->query($sql);
+
+    $picture = $pdoStatement->fetchObject('photo\Models\Photos');
+    
+    return $picture;
+}
 }
