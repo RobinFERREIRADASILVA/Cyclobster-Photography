@@ -23,7 +23,7 @@
                             <i class="fas fa-bars close"></i>
                         </div>
                     </nav>
-                    <nav id="mobile-expand" class="displayNone">
+                    <nav id="mobile-expand" style ="display: none">
                         <div class="header-nav">
                             <a href="index.html" class="mobile-logo">Cyclobster Photography</a>
                             <i class="fas fa-times"></i>

@@ -8,6 +8,7 @@ let picture = {
 
     init : function(){
         this.containerElement = document.querySelectorAll('.modal');
+        this.pictureElement = document.querySelectorAll('.img-content');
         this.btnElement = document.querySelectorAll('.btn');
         this.closeElement = document.querySelectorAll('.close');
         this.arrowRight = document.querySelectorAll('.arrow-right');
@@ -29,37 +30,45 @@ let picture = {
             element.addEventListener('click', picture.handlerPreviousModal)
         })
 
+        
+
     },
 
     handleFullScreen : function(event)
     {
         console.log('yo');
+
+        let divPicture = event.currentTarget.parentElement.parentElement;
+        let currentModal = divPicture.nextElementSibling;
+        currentModal.style.display = 'block'; 
         
-        let picture = event.currentTarget.parentElement.parentElement;
-        let currentModal = picture.nextElementSibling;
-        currentModal.style.display = 'block';
+        picture.adjustHeightPicture(currentModal);
         
     },
 
     handlerCloseFullScreen :function(event)
     {
         event.currentTarget.parentElement.style.display = 'none';
+        
     },
 
     handlerNextModal: function(event)
     {   
         let currentModal = event.currentTarget.parentElement;
+        
 
         if(currentModal.nextElementSibling == null)
         {
             picture.containerElement[0].style.display = 'block';
-            currentModal.style.display = 'none'
+            currentModal.style.display = 'none';
+            picture.adjustHeightPicture(currentModal.nextElementSibling.nextElementSibling);
             
         }
         else
         {
             event.currentTarget.parentElement.nextElementSibling.nextElementSibling.style.display = 'block';
             currentModal.style.display = 'none';
+            picture.adjustHeightPicture(currentModal.nextElementSibling.nextElementSibling);
         }
         
     },
@@ -67,18 +76,34 @@ let picture = {
     handlerPreviousModal: function(event)
     {   
         let currentModal = event.currentTarget.parentElement;
-        let categoryElement = document.querySelector('.category')
+        let categoryElement = document.querySelector('.category');
+
 
         if(currentModal.previousElementSibling == categoryElement)
         {
             picture.containerElement[(picture.containerElement.length - 1)].style.display = 'block';
-            currentModal.style.display = 'none'
+            currentModal.style.display = 'none';
+            picture.adjustHeightPicture(currentModal.previousElementSibling.previousElementSibling);
             
         }
         else
         {  
             event.currentTarget.parentElement.previousElementSibling.previousElementSibling.style.display = 'block';
             currentModal.style.display = 'none';
+            picture.adjustHeightPicture(currentModal.previousElementSibling.previousElementSibling);
+        }
+        
+    },
+
+    adjustHeightPicture : function(element)
+    {
+        
+        if(element.lastElementChild.clientHeight < 750)
+        {
+            
+                
+            element.lastElementChild.style.paddingTop = "90px";
+            
         }
         
     }

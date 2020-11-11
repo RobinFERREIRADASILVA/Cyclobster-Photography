@@ -288,7 +288,6 @@ text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
     display: none; /* Hidden by default */
     position: fixed; /* Stay in place */
     z-index: 1; /* Sit on top */
-    padding-top: auto; /* Location of the box */
     left: 0;
     top: 0;
     width: 100%; /* Full width */
@@ -302,7 +301,8 @@ text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
 .img-content{
     margin: auto;
     display: block;
-    height: 100vh;
+    max-width: 80%;
+    max-height: 100vh;
 
 }
 
@@ -316,6 +316,29 @@ text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
     font-weight: bold;
     transition: 0.3s;
   }
+
+  .arrow-right
+    { 
+    cursor: pointer;
+    position: absolute;
+    top: 420px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 30px;
+
+    }
+
+    .arrow-left {
+    cursor: pointer; 
+    position: absolute;
+    top: 420px;
+    left: 35px;
+    color: #f1f1f1;
+    font-size: 30px;
+
+    }
+
+  
   
 
 
@@ -543,7 +566,7 @@ text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
     .img-content{
         margin: auto;
         display: block;
-        height: 100vh;
+        height: 100vh !important;
     
     }
     

@@ -18,15 +18,15 @@ let app = {
 
     handleOpenNavBar : function(evt)
     {
-           app.mobileExpand.classList.remove('displayNone');
-           app.mobileNav.classList.add('displayNone');
+           app.mobileExpand.style.display = 'block'
+           app.hamburgerElement.style.display = 'none'
 
     },
 
     handleCloseNavBar : function(evt)
     {
-           app.mobileExpand.classList.add('displayNone');
-           app.mobileNav.classList.remove('displayNone');
+       app.mobileExpand.style.display = 'none'
+       app.hamburgerElement.style.display = 'inline-block'
     }
 
 }
