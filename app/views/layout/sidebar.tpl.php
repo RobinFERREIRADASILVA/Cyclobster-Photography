@@ -20,7 +20,7 @@
                     <nav id="mobile-nav">
                         <a href="<?= $router->generate('home'); ?>" class="mobile-logo">Cyclobster Photography</a>
                         <div class="hamburger">
-                            <i class="fas fa-bars close"></i>
+                            <i class="fas fa-bars"></i>
                         </div>
                     </nav>
                     <nav id="mobile-expand" style ="display: none">
