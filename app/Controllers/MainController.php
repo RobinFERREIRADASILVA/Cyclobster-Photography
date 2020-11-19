@@ -10,13 +10,9 @@ class MainController extends CoreController
     {
         $this->show('main/home');
     }
-    public function gallery()
-    {
-        $this->show('main/gallery');
-    }
     public function about()
     {
-        $this->show('about');
+        $this->show('main/about');
     }
     public function contact(){
         $this->show('contact');

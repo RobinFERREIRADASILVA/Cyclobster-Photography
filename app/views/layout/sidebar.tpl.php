@@ -12,7 +12,7 @@
                         <ul class="menu">
                             <li><a href="<?= $router->generate('home') ?>">Home</a></li>
                             <li><a href="<?= $router->generate('gallery') ?>">Gallery</a></li>
-                            <li><a href="">About</a></li>
+                            <li><a href="<?= $router->generate('about') ?>">About</a></li>
                             <li><a href="">Contact</a></li>
                             <li><a href="">Livre d'or</a></li>
                         </ul>
@@ -31,7 +31,7 @@
                         <ul class="menu">
                             <li><a href="<?= $router->generate('home') ?>">Home</a></li>
                             <li><a href="<?= $router->generate('gallery') ?>">Gallery</a></li>
-                            <li><a href="">About</a></li>
+                            <li><a href="<?= $router->generate('about') ?>">About</a></li>
                             <li><a href="">Contact</a></li>
                             <li><a href="">Livre d'or</a></li>
                         </ul>
