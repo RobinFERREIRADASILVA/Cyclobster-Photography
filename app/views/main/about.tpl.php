@@ -1,13 +1,15 @@
 <div class="about-container">
-    <div class="img">
+    <div class="img-about">
         <h1 class ="about-title">About me and my world</h1>
     </div>
     <div class="bio">
+
         <div class="text-content-about">
             <h2>Who am i ?</h2>
-
+            <hr>
             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repudiandae neque tempora nam illum quam! Architecto impedit accusamus rerum sunt quo officiis nostrum voluptatem corrupti, fugit placeat inventore ea eligendi accusantium est enim harum numquam ullam voluptas quod ? Quidem in vitae quo accusamus quis sit ea dolorum aliquid ut. Quisquam ea earum doloribus, facilis illum aspernatur </p>
-            <p>tempore recusandae maiores officia perspiciatis quas fugit sint a sed mollitia vel eum neque reiciendis ipsum dicta iusto architecto voluptatem, saepe excepturi laboriosam rerum ad nesciunt sequi! Excepturi reiciendis dolore corporis ea officiis, voluptate aperiam nisi quae molestias ? Doloribus, porro eos in amet blanditiis at voluptates repellendus</p>
+            <p>tempore recusandae maiores officia perspiciatis quas fugit sint a sed mollitia vel eum neque reiciendis ipsum dicta iusto architecto voluptatem, saepe excepturi laboriosam rerum ad nesciunt sequi! Excepturi reiciendis </p>
+            <p> corporis ea officiis, voluptate aperiam nisi quae molestias ? Doloribus, porro eos in amet blanditiis at voluptates repellendus</p>
         </div>
         
     </div>
@@ -15,6 +17,7 @@
     <div class="competence">
         <div class="competence-title">
             <h2>Competences</h2>
+            <hr>
         </div>
         <div class="jobs">
             <div class="job comedie">
