@@ -379,6 +379,7 @@ a{
     .competence
     {   
         background: black;
+        padding: 0 46px;
     }
     .job{
     
@@ -388,7 +389,6 @@ a{
     .competence-title
     {
         text-align: center;
-        padding: 0 46px;
     }
 /* Page Contact */
 
@@ -852,7 +852,7 @@ a{
     }
 
     .job{
-        padding: 26px 70px;
+        padding: 10px 70px;
     }
     
 }
