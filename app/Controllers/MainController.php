@@ -15,9 +15,7 @@ class MainController extends CoreController
         $this->show('main/about');
     }
     public function contact(){
-        $this->show('contact');
+        $this->show('main/contact');
     }
-    public function livre(){
-        $this->show('livre');
-    }
+
 }

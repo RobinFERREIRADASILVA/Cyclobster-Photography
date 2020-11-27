@@ -13,8 +13,7 @@
                             <li><a href="<?= $router->generate('home') ?>">Home</a></li>
                             <li><a href="<?= $router->generate('gallery') ?>">Gallery</a></li>
                             <li><a href="<?= $router->generate('about') ?>">About</a></li>
-                            <li><a href="">Contact</a></li>
-                            <li><a href="">Livre d'or</a></li>
+                            <li><a href="<?= $router->generate('contact') ?>">Contact</a></li>
                         </ul>
                     </nav>
                     <nav id="mobile-nav">
@@ -25,15 +24,14 @@
                     </nav>
                     <nav id="mobile-expand" style ="display: none">
                         <div class="header-nav">
-                            <a href="index.html" class="mobile-logo">Cyclobster Photography</a>
+                            <a href="<?= $router->generate('home') ?>" class="mobile-logo">Cyclobster Photography</a>
                             <i class="fas fa-times"></i>
                         </div>
                         <ul class="menu">
                             <li><a href="<?= $router->generate('home') ?>">Home</a></li>
                             <li><a href="<?= $router->generate('gallery') ?>">Gallery</a></li>
                             <li><a href="<?= $router->generate('about') ?>">About</a></li>
-                            <li><a href="">Contact</a></li>
-                            <li><a href="">Livre d'or</a></li>
+                            <li><a href="<?= $router->generate('contact') ?>">Contact</a></li>
                         </ul>
                     </nav>
                     </div>

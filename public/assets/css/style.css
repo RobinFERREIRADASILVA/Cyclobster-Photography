@@ -350,7 +350,7 @@ text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
         
     }
     
-    .about-title {
+    .about-title , .contact-title {
             
         font-size: 2em;
         align-self: center;
@@ -392,6 +392,98 @@ text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
         text-align: center;
         padding: 0 46px;
     }
+/* Page Contact */
+
+
+.contact-container {
+    background-color: black;
+    height: 100%;
+    overflow: auto;
+    display: grid;
+    grid-template-rows: 60% 90% 55% ;
+}
+
+.contact-header {
+    background: url('../img/nature1.jpg');
+    background-size: cover;
+    background-position: center center;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.tarif {
+    background-color: #f0efeb;
+    color: black;
+    text-align: center;
+    padding: 0px 10px;
+}
+.prix
+{
+    margin: 50px auto;
+    max-width: 450px;
+    border: 1px solid black;
+    height: 80%;
+    padding: 30px 20px;
+}
+.list {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    list-style-type: none;
+    height: 80%;
+    padding: 0;
+    margin: 0;
+}
+.list-item{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 20px;
+    border-bottom: 1px solid black;
+    font-style: italic;
+}
+.place
+{
+    font-weight: bold;
+    font-style: normal;
+}
+.prix-title
+{
+    margin: 0;
+}
+.prix-description
+{
+    font-size: 0.75em;
+    font-style: italic;
+}
+
+.container-offer
+{
+    max-width: 600px;
+    margin: auto;
+    text-align: center;
+}
+
+.offer-socials{
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+    padding: 25px 0
+}
+.offer-socials img {
+    width: 80px;
+    filter:grayscale(100%);
+    transition: 0.8s;
+}
+.offer-socials img:hover {
+    filter: none;
+}
+.offer-title {
+    font-size: 1.5em;
+}
+
 
 
 
@@ -594,7 +686,7 @@ text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
     
 }
 
-.about-title {
+.about-title, .contact-title {
         
     font-size: 3.5em;
 
@@ -652,6 +744,33 @@ text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
     text-align: center;
 }
 
+/* Page contact */
+
+.offer-socials img {
+    width: 120px;
+
+}
+.offer-title {
+    font-size: 2.3em;
+}
+
+.prix
+{
+    margin: 50px auto;
+    max-width: 450px;
+    border: 1px solid black;
+    height: 80%;
+    padding: 30px 100px;
+}
+.list {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    list-style-type: none;
+    height: 90%;
+    padding: 0;
+    margin: 0;
+}
 }
 
 @media (min-width: 1450px)

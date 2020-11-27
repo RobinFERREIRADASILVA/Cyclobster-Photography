@@ -71,16 +71,6 @@ $router->map(
 );
 $router->map(
     'GET',
-    '/livre',
-    [
-        'method' => 'livre',
-        'controller' => 'photo\Controllers\MainController'
-
-    ],
-    'livre'
-);
-$router->map(
-    'GET',
     '/error404',
     [
         'method' => 'error404',
