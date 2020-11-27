@@ -160,19 +160,18 @@ a{
     margin-top: 97px;
     padding: 0px 60px;
 }
+.main-content h1, .main-content p {
+    text-shadow: 8px 9px 10px black;
+
+}
 
 .main-content h2 {
     font-size: 1.7em;
     font-weight: 600;
-text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
-             0px 8px 13px rgba(0,0,0,0.1),
-             0px 18px 23px rgba(0,0,0,0.1);
+    text-shadow: 8px 9px 10px black;
 }
 
-.main-content {
-    font-size: 0.9em;
-    font-weight: 400;
-}
+
 
 /* Gallery version mobile */
 
@@ -618,10 +617,8 @@ text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
 
 .main-content h1 {
 
-    font-size: 3.5em;
-    text-shadow: 0px 15px 5px rgba(0,0,0,0.1),
-                10px 20px 5px rgba(0,0,0,0.05),
-                -10px 20px 5px rgba(0,0,0,0.05);
+    font-size: 3em;
+
 }
 
 /* Page Gallery */
