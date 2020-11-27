@@ -157,8 +157,8 @@ a{
 .main-content{
     font-family: 'Playfair Display', serif;
     text-align: center;
-    margin-top: 97px;
-    padding: 0px 60px;
+    margin-top: 70px;
+    padding: 0px 44px;
 }
 .main-content h1, .main-content p {
     text-shadow: 8px 9px 10px black;
@@ -280,7 +280,6 @@ a{
     margin: auto;
 
 }
-
 /* FullScreen Style for pictures in category templates */
 
 .modal {
@@ -659,6 +658,7 @@ a{
 .category-container{
     overflow: scroll;
     flex-wrap: wrap;
+    background-color: black;
     
 }
 

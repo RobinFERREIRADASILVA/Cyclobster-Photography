@@ -42,7 +42,8 @@ let picture = {
         let currentModal = divPicture.nextElementSibling;
         currentModal.style.display = 'block'; 
         
-        picture.adjustHeightPicture(currentModal);
+        picture.adjustHeightPictureDesktop(currentModal);
+        picture.adjustHeightPictureMobile(currentModal);
         
     },
 
@@ -61,14 +62,16 @@ let picture = {
         {
             picture.containerElement[0].style.display = 'block';
             currentModal.style.display = 'none';
-            picture.adjustHeightPicture(currentModal.nextElementSibling.nextElementSibling);
+            picture.adjustHeightPictureDesktop(currentModal.nextElementSibling.nextElementSibling);
+            picture.adjustHeightPictureMobile(currentModal.nextElementSibling.nextElementSibling);
             
         }
         else
         {
             event.currentTarget.parentElement.nextElementSibling.nextElementSibling.style.display = 'block';
             currentModal.style.display = 'none';
-            picture.adjustHeightPicture(currentModal.nextElementSibling.nextElementSibling);
+            picture.adjustHeightPictureDesktop(currentModal.nextElementSibling.nextElementSibling);
+            picture.adjustHeightPictureMobile(currentModal.nextElementSibling.nextElementSibling);
         }
         
     },
@@ -83,29 +86,52 @@ let picture = {
         {
             picture.containerElement[(picture.containerElement.length - 1)].style.display = 'block';
             currentModal.style.display = 'none';
-            picture.adjustHeightPicture(currentModal.previousElementSibling.previousElementSibling);
+            picture.adjustHeightPictureDesktop(currentModal.previousElementSibling.previousElementSibling);
+            picture.adjustHeightPictureMobile(currentModal.previousElementSibling.previousElementSibling);
             
         }
         else
         {  
             event.currentTarget.parentElement.previousElementSibling.previousElementSibling.style.display = 'block';
             currentModal.style.display = 'none';
-            picture.adjustHeightPicture(currentModal.previousElementSibling.previousElementSibling);
+            picture.adjustHeightPictureDesktop(currentModal.previousElementSibling.previousElementSibling);
+            picture.adjustHeightPictureMobile(currentModal.previousElementSibling.previousElementSibling);
         }
         
     },
 
-    adjustHeightPicture : function(element)
+    adjustHeightPictureDesktop : function(element)
     {
-        
-        if(element.lastElementChild.clientHeight < 750)
-        {
-            
+        if(window.innerWidth >= 892 && window.innerWidth < 1450){
+            if(element.lastElementChild.clientHeight < 750)
+            {
                 
-            element.lastElementChild.style.paddingTop = "90px";
-            
+                    
+                element.lastElementChild.style.paddingTop = "90px";
+                
+            }
+          }
+    },
+
+    adjustHeightPictureMobile : function(element)
+    {
+        if(window.innerWidth > 370 && window.innerWidth < 650)
+        {
+            if(element.lastElementChild.clientHeight > 250 && element.lastElementChild.clientHeight < 500)
+            {
+                element.lastElementChild.style.marginTop = "50%";
+            }
+            else{
+                element.lastElementChild.style.marginTop = "21%";
+            }
         }
-        
+        else if(window.innerWidth >= 650 && window.innerWidth < 892)
+        {
+            if(element.lastElementChild.clientHeight > 300 && element.lastElementChild.clientHeight < 734)
+            {
+                element.lastElementChild.style.marginTop = "25%";
+            }
+        }
     }
 
 }
