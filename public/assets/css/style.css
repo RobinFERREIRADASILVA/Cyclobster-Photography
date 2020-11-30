@@ -24,7 +24,7 @@ body {
 
     grid-row-start:2;
     grid-row-end: 3;
-    height: 100vh;
+    height: 93vh;
 
 }
 .container-inside{
@@ -363,7 +363,7 @@ a{
         height: 100%;
         overflow: auto;
         display: grid;
-        grid-template-rows: 50% 70% 105%;
+        grid-template-rows: 50% 80% 120%;
     }
     
     .bio{
@@ -384,7 +384,7 @@ a{
     .job{
     
         text-align:center;
-        padding: 5px 65px; 
+        padding: 5px; 
      }
     .competence-title
     {
