@@ -15,9 +15,6 @@ body {
 .left-side{
     grid-row-start:1;
     grid-row-end: 2;
-    background-color: black;
-
-
 }
 .right-side
 {
@@ -76,6 +73,8 @@ a{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    background-color: black;
+    border-radius: 2px;
 
 }
 
