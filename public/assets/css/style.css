@@ -6,7 +6,7 @@ body {
 
 .container{
     display: grid;
-    grid-template-rows: 6% 94%;
+    grid-template-rows: 6% 90%;
     background: url('../img/470re.jpg') no-repeat fixed;
     background-size: cover;
     background-position: center center;
@@ -359,10 +359,10 @@ a{
     }
     
     .about-container {
-        height: 100%;
+        height: 100vh;
         overflow: auto;
         display: grid;
-        grid-template-rows: 50% 80% 120%;
+        grid-template-rows: 45% 80% 115%;
     }
     
     .bio{
@@ -394,10 +394,10 @@ a{
 
 .contact-container {
     background-color: black;
-    height: 100%;
+    height: 100vh;
     overflow: auto;
     display: grid;
-    grid-template-rows: 60% 90% 55% ;
+    grid-template-rows:45% 90% 55% ;
 }
 
 .contact-header {
@@ -481,9 +481,12 @@ a{
     font-size: 1.5em;
 }
 
-
-
-
+@media (min-width: 473px) { 
+    .about-container
+    {
+        grid-template-rows: 50% 60% 95%;
+    }
+}
 /* Medium Screen */
 @media (min-width: 897px) { 
     .container
@@ -852,6 +855,10 @@ a{
 
     .job{
         padding: 10px 70px;
+    }
+
+    .competence-title {
+        margin-bottom: 20px;
     }
     
 }
