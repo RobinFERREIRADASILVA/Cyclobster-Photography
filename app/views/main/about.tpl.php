@@ -7,9 +7,13 @@
         <div class="text-content-about">
             <h2>Who am i ?</h2>
             <hr>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repudiandae neque tempora nam illum quam! Architecto impedit accusamus rerum sunt quo officiis nostrum voluptatem corrupti, fugit placeat inventore ea eligendi accusantium est enim harum numquam ullam voluptas quod ? Quidem in vitae quo accusamus quis sit ea dolorum aliquid ut. Quisquam ea earum doloribus, facilis illum aspernatur </p>
-            <p>tempore recusandae maiores officia perspiciatis quas fugit sint a sed mollitia vel eum neque reiciendis ipsum dicta iusto architecto voluptatem, saepe excepturi laboriosam rerum ad nesciunt sequi! Excepturi reiciendis </p>
-            <p> corporis ea officiis, voluptate aperiam nisi quae molestias ? Doloribus, porro eos in amet blanditiis at voluptates repellendus</p>
+            <p>La réalité n’est jamais ce que l’on perçoit, chaque regard est différent. Tout dépend de comment le regarde se porte sur telle ou telle chose. Les formes, les courbes, la lumière. Nous sommes tous des artistes.</p>
+            <p>Bonjour à vous tous, je suis Mickaël (Cyclobster) photographe depuis 2019, tout d’abord j’avais acheté un appareil photo numérique pour faire de la vidéo sur internet, sans me préoccuper de l’intérêt photographique de l’objet. Quelques photos par ci par là sans plus d’intérêt aucun. Puis 2020 et ses évènements m’ont poussé a faire de la photographie et beaucoup (BEAUCOUP) moins de vidéos. C’est à ce moment précis que le déclic est apparu. Je ne vivais désormais plus que pour et par la photo. En Juillet 2020 je décide donc de me mettre à l’argentique pour mon plus grand plaisir. </p>
+            <p>Aujourd’hui encore je pousse et repousse ma vision de la photo, de mon environnement et de mes sujets pour vous apporter une vision unique de chaque personne/architecture/foret et autres contextes naturels ou non. J’aime l’idée que j’essaye de faire sortir le plus beaux de chaque sujet, avec un regard tendre et bienveillant. 
+            <p>La photo c’est de l’art a portée de tous</p>
+            <p>Pour moi la photo c’est avant tout une histoire d’amour et de tendresse. </p>
+            <p>« Les photos sont là, et il ne te reste plus qu’à les prendre. » Robert</p>
+            
         </div>
         
     </div>
