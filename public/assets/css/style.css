@@ -397,7 +397,7 @@ a{
     height: 100vh;
     overflow: auto;
     display: grid;
-    grid-template-rows:45% 90% 55% ;
+    grid-template-rows:50% 90% 55% ;
 }
 
 .contact-header {
@@ -698,7 +698,7 @@ a{
     height: 100%;
     overflow: auto;
     display: grid;
-    grid-template-rows: 60% 65% 65%;
+    grid-template-rows: 50% 65% 65%;
 }
 
 .bio{
@@ -853,7 +853,7 @@ a{
         height: 100%;
         overflow: auto;
         display: grid;
-        grid-template-rows: 60% 62% 50%;
+        grid-template-rows: 50% 62% 50%;
     }
 
     .job{
