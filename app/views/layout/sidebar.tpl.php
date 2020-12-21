@@ -2,9 +2,8 @@
             <div class="container-inside">
 
                 <div class="logo">
+                    <img class="logo-img" src="<?= $_SERVER['BASE_URI']  ?>/assets/img/logo1.jpg">
                     <h1>Cyclobster Photography</h1>
-                    
-
                 </div>
                 
                 <div class="navbar">
