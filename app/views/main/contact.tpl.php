@@ -21,7 +21,6 @@
             <ul class="offer-socials">
                 <li class="insta"><a href="https://www.instagram.com/cyclobster_/"><img src="https://img.icons8.com/fluent/144/000000/instagram-new.png"/></i></a></li>
                 <li class="fb"><a href="https://www.facebook.com/Miik0o.G"><img src="https://img.icons8.com/color/144/000000/facebook.png"/></a></li>
-                <li class="twitter"><a href="#"><img src="https://img.icons8.com/fluent/144/000000/twitter.png"/></a></li>
 
             </ul>
 
