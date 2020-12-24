@@ -1,9 +1,10 @@
 
 
             <div class="main-content">
-                <h1>Cyclobster Photography.</h1>
-                <h2>Come into my world.</h2>
-                <p>Photograph for your service, work in argentique and numeric. Enjoy different styles of universe with my collections.</p>
+                <h1>Cyclobster Photographie.</h1>
+                <h2>Bienvenue dans mon univers.</h2>
+                <p>Photographe au service de votre imaginaire
+Profitez des differents styles que compose mon monde en parcourant la galerie.</p>
             </div>
 
                     

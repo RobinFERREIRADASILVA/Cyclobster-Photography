@@ -1,11 +1,11 @@
 <div class="about-container">
     <div class="img-about">
-        <h1 class ="about-title">About me and my world</h1>
+        <h1 class ="about-title">Découvrez mon univers</h1>
     </div>
     <div class="bio">
 
         <div class="text-content-about">
-            <h2>Who am i ?</h2>
+            <h2>Qui suis je ?</h2>
             <hr>
             <p>La réalité n’est jamais ce que l’on perçoit, chaque regard est différent. Tout dépend de comment le regarde se porte sur telle ou telle chose. Les formes, les courbes, la lumière. Nous sommes tous des artistes.</p>
             <p>Bonjour à vous tous, je suis Mickaël (Cyclobster) photographe depuis 2019, tout d’abord j’avais acheté un appareil photo numérique pour faire de la vidéo sur internet, sans me préoccuper de l’intérêt photographique de l’objet. Quelques photos par ci par là sans plus d’intérêt aucun. Puis 2020 et ses évènements m’ont poussé a faire de la photographie et beaucoup (BEAUCOUP) moins de vidéos. C’est à ce moment précis que le déclic est apparu. Je ne vivais désormais plus que pour et par la photo. En Juillet 2020 je décide donc de me mettre à l’argentique pour mon plus grand plaisir. </p>
