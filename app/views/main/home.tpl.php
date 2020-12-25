@@ -4,7 +4,7 @@
                 <h1>Cyclobster Photographie.</h1>
                 <h2>Bienvenue dans mon univers.</h2>
                 <p>Photographe au service de votre imaginaire
-Profitez des differents styles que compose mon monde en parcourant la galerie.</p>
+Profitez des differents styles que compose mon monde en parcourant ma gallerie.</p>
             </div>
 
                     
