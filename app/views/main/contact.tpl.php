@@ -10,7 +10,7 @@
                 <li class="list-item"><span class="place">Outdoor Session</span> 50 €/h</li>
                 <li class="list-item"><span class="place">Argentique Session</span> 50€/h + pellicule</li>
             </ul>
-            <p class="prix-description">Tous ces prix sont générique, négociable pour chaque demande.</p>
+            <p class="prix-description">Tous ces prix sont génériques, négociables pour chaque demande.</p>
         </div>
 
     </div>
