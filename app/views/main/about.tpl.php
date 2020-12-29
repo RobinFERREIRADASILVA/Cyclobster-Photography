@@ -34,7 +34,7 @@
             <div class="job youtube">
                 <h3>Youtube</h3>
                 <i class="icon fab fa-youtube"></i>
-                <p>Adepte de la vidéo, j'ai crée une chaîne youtube <em>"L'Absurde Oreille"</em> d'abord portée sur l'humour et les sketchs, pour me tourner plutôt maintenant sur les vidéos autour de la technique de la photographie.</p>
+                <p>Adepte de la vidéo, j'ai créé une chaîne Youtube <em>"L'Absurde oreille"</em> d'abord portée sur l'humour et les sketchs, pour me tourner plutôt maintenant sur les vidéos autour de la technique de la photographie.</p>
             </div>
         </div>
         
