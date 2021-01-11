@@ -19,8 +19,8 @@
                <div class="list-group">
                     <p class="list-item"><span class="place">Argentique Session</span> 65€/h + pellicule</p>
                     <p>24 ou 36 poses, 3 photos tirées.</p>
-                    <p>Tout les scans (selon qualité)</p>
-                    <p> 5€ par tirage supplémentaire</p>
+                    <p>Tous les scans (selon qualité)</p>
+                    <p>5€ par tirage supplémentaire</p>
                </div>
             </div>
             <p class="prix-description">Tous ces prix sont génériques, négociables pour chaque demande.</p>
