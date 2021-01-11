@@ -5,11 +5,24 @@
     <div class="tarif">
         <div class="prix">
             <h2 class="prix-title">Prix</h2>
-            <ul class ="list">
-                <li class="list-item"><span class="place">Indoor Session</span> 70 €/h</li>
-                <li class="list-item"><span class="place">Outdoor Session</span> 50 €/h</li>
-                <li class="list-item"><span class="place">Argentique Session</span> 50€/h + pellicule</li>
-            </ul>
+            <div class ="list">
+                <div class="list-group">
+                    <p class="list-item"><span class="place">Indoor Session</span> 75 €/h</p>
+                    <p>10 photos retouchées + 1 au choix offerte</p>
+                    <p>5 photos en plus : 20€</p>
+                </div>
+               <div class="list-group">
+                    <p class="list-item"><span class="place">Outdoor Session</span> 60 €/h</p>
+                    <p>10 photos retouchées + 1 au choix offerte</p>
+                    <p>5 photos en plus : 20€</p>   
+               </div>
+               <div class="list-group">
+                    <p class="list-item"><span class="place">Argentique Session</span> 65€/h + pellicule</p>
+                    <p>24 ou 36 poses, 3 photos tirées.</p>
+                    <p>Tout les scans (selon qualité)</p>
+                    <p> 5€ par tirage supplémentaire</p>
+               </div>
+            </div>
             <p class="prix-description">Tous ces prix sont génériques, négociables pour chaque demande.</p>
         </div>
 

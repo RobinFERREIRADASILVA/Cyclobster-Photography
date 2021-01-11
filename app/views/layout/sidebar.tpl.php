@@ -10,7 +10,7 @@
                     <nav id="web-nav">
                         <ul class="menu">
                             <li><a href="<?= $router->generate('home') ?>">Accueil</a></li>
-                            <li><a href="<?= $router->generate('gallery') ?>">Gallerie</a></li>
+                            <li><a href="<?= $router->generate('gallery') ?>">Galerie</a></li>
                             <li><a href="<?= $router->generate('about') ?>">À  propos</a></li>
                             <li><a href="<?= $router->generate('contact') ?>">Contact</a></li>
                         </ul>
@@ -28,8 +28,8 @@
                         </div>
                         <ul class="menu">
                             <li><a href="<?= $router->generate('home') ?>">Accueil</a></li>
-                            <li><a href="<?= $router->generate('gallery') ?>">Gallerie</a></li>
-                            <li><a href="<?= $router->generate('about') ?>">À  propos</a></li>
+                            <li><a href="<?= $router->generate('gallery') ?>">Galerie</a></li>
+                            <li><a href="<?= $router->generate('about') ?>">À propos</a></li>
                             <li><a href="<?= $router->generate('contact') ?>">Contact</a></li>
                         </ul>
                     </nav>
